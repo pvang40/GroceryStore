@@ -23,21 +23,23 @@ do
   { cout<< "What is the item?\n"; 
    cin >> item  ; 
 }
-  else if  ( input == 'q' || input == 'Q' ) 
-  { input = 'q' ; } 
 
-  if ( numItems > 4 ) 
+ if ( numItems < 5 )
+ {
+    list[numItems] = item ;
+       numItems++;
+          }
+
+ else if ( numItems > 4 && input == 'A' || input == 'a' ) 
   {
   cout<< "You'll need a bigger list!\n";
  
 
  }
 
- else  if ( numItems < 5 ) 
-{
-   list[numItems] = item ;
-   numItems++; 
-   } 
+
+  if ( input == 'q' || input == 'Q' )
+  {input = 'q' ; }
 
 }while ( input != 'Q' && input != 'q');
  
