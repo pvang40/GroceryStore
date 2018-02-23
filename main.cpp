@@ -28,7 +28,7 @@ do
 
   if ( numItems > 4 ) 
   {
-  cout<< "You'll need a bigger list!";
+  cout<< "You'll need a bigger list!\n";
  
 
  }
