@@ -2,12 +2,10 @@
 #include<iostream>
 #include<string>
 using namespace std;
-
-const int LIST_SIZE = 5;
  
 int main()
 {
-  string groceryList[LIST_SIZE]; //array of 5 strings
+  string list[5]; //array of 5 strings
   int numItems = 0;
   char input;
 
@@ -19,6 +17,13 @@ do
   cout<<"\n (Q)uit";
   cout<<"\nYour choice (A/Q): ";
   cin>>input;
+  if ( input == 'A' || input == 'a' ) 
+{
+   cout<< "What is the item?\n";
+   cin>> list[numItems];
+   numItems++; 
+   }
+
 } while ( input != 'Q' && input != 'q');
   return 0;
 }
