@@ -26,7 +26,7 @@ do
 else if ( input == 'A' || input == 'a' && numItems > 4 )
 
 {
-cout<< "What is the item?\n You'll need a bigger list!\n "; 
+cout<< "What is the item?\nYou'll need a bigger list!\n\n\n\n\n\n "; 
  
 } 
 
