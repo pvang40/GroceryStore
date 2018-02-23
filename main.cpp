@@ -17,16 +17,17 @@ do
   cout<<"\n (Q)uit";
   cout<<"\nYour choice (A/Q): ";
   cin>>input;
+
   if ( input == 'A' || input == 'a'&& numItems < 5 ) 
 {
    cout<< "What is the item?\n";
    cin>> list[numItems];
    numItems++; 
    }
-else if ( input == 'A' || input == 'a' && numItems > 4 )
+else if ( numItems > 4 )
 
 {
-cout<< "What is the item?\nYou'll need a bigger list!\n\n\n\n\n\n "; 
+cout<< "What is the item?\nYou'll need a bigger list!"; 
  
 } 
 
