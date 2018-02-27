@@ -21,38 +21,32 @@ do
 
   if ( input == 'A' || input == 'a') 
   { cout<< "What is the item?\n"; 
-   cin >> item  ; 
-}
+    cin >> item  ; 
+  }
 
  if ( numItems < 5 )
- {
+  {
     list[numItems] = item ;
-       numItems++;
-          }
+    numItems++;
+  }
 
  else if ( numItems > 4 && input == 'A' || input == 'a' ) 
   {
   cout<< "You'll need a bigger list!\n";
- 
-
- }
+  } 
 
 
   if ( input == 'q' || input == 'Q' )
-  {input = 'q' ; }
+  {
+   input = 'q' ; 
+  }
 
-}while ( input != 'Q' && input != 'q');
+ }while ( input != 'Q' && input != 'q');
  
-
-
-
-
-
-
-
-
-
-
+ for ( numItems = 0 ; numItems < 5 ; numItems++ )
+  { 
+   cout<< list[numItems]<<endl; 
+  } 
 
   return 0;
 }
