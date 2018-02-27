@@ -36,11 +36,6 @@ do
  }while ( input != 'Q' && input != 'q');
  
  int listNumber = 1 ;
-  cout<<"\n==GROCERY LIST MANAGER==";
-    cout<<"\nEnter your choice: ";
-      cout<<"\n (A)dd an item";
-        cout<<"\n (Q)uit";
-          cout<<"\nYour choice (A/Q): ";
  cout<< "==ITEMS TO BUY==\n";
 
  for ( numItems = 0 ; numItems < 5 ; numItems++ )
