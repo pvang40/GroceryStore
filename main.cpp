@@ -32,11 +32,6 @@ do
   } 
 
 
- else if ( input == 'q' || input == 'Q' )
-  {
-   input = 'q' ; 
-  }
-
  }while ( input != 'Q' && input != 'q');
  
  int listNumber = 1 ;
