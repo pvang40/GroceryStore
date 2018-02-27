@@ -19,15 +19,11 @@ do
   cout<<"\nYour choice (A/Q): ";
   cin >> input; 
 
-  if ( input == 'A' || input == 'a') 
+  if (( input == 'A' || input == 'a')&& numItems < 5 ) 
   { cout<< "What is the item?\n"; 
     cin >> item  ; 
-  }
-
- if ( numItems < 5 )
-  {
-    list[numItems] = item ;
-    numItems++;
+    list[numItems] = item; 
+    numItems++; 
   }
 
  else if ( numItems > 4 && input == 'A' || input == 'a' ) 
