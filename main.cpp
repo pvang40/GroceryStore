@@ -19,26 +19,28 @@ do
   cout<<"\nYour choice (A/Q): ";
   cin >> input; 
 
-  if (( input == 'A' || input == 'a') && numItems < 5 ) 
+  if (( input == 'A' || input == 'a' ) && numItems < 5 ) 
   { cout<< "What is the item?\n";  
     cin >> item  ; 
-    list[numItems] = item; 
-    numItems++; 
+    list[numItems] = item;
+    numItems ++;
   }
 
  else if ( numItems > 4 && input != 'q' && input != 'Q') 
   {
   cout<< "What is the item?\nYou'll need a bigger list!\n";
-  } 
-  if ( input == 'q' || input == 'Q') 
-  { 
   input = 'q'; 
-  }
+  } 
 
 
  }while ( input != 'Q' && input != 'q');
  
  int listNumber = 1 ;
+  cout<<"\n==GROCERY LIST MANAGER==";
+    cout<<"\nEnter your choice: ";
+      cout<<"\n (A)dd an item";
+        cout<<"\n (Q)uit";
+          cout<<"\nYour choice (A/Q): ";
  cout<< "==ITEMS TO BUY==\n";
 
  for ( numItems = 0 ; numItems < 5 ; numItems++ )
