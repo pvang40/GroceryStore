@@ -26,7 +26,7 @@ do
     numItems ++;
   }
 
- else if ( numItems > 4 && input != 'q' && input != 'Q') 
+ else if ( numItems > 4 && ( input == 'a' || input == 'A') )
   {
   cout<< "What is the item?\nYou'll need a bigger list!\n";
  
