@@ -34,7 +34,7 @@ do
  
  if (list.size() == 0) 
  {
-    cout<<"No Items to buy!\n"; 
+    cout<<"No items to buy!\n"; 
  }
 
  
